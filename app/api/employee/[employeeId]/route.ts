@@ -1,7 +1,11 @@
 import { db } from '@/lib/db';
 import { NextResponse } from 'next/server';
 
-export async function GET(req: Request, { params }: { params: { employeeId: string } }) {
+type Props = {
+    params: Promise<{ employeeId: string }>
+}
+
+export async function GET(req: Request, { params }: Props) {
     
     const { employeeId } = await params;
 
