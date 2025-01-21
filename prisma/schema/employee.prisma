@@ -1,0 +1,9 @@
+model Employee {
+    id        String    @id @default(auto()) @map("_id") @db.ObjectId
+    firstName String
+    lastName  String
+    email     String    @unique
+    position  String
+    startDate DateTime
+    status    String    // pending, in progress, completed
+}
