@@ -5,19 +5,19 @@ const prisma = new PrismaClient();
 async function main() {
     const employees = [
         {
-            firstName: 'Marie',
-            lastName: 'LEROY',
-            email: 'marie@exemple.com',
-            position: 'HR',
-            startDate: new Date('2020-08-01'),
-            status: 'in-progress',
+            firstName: 'Virgile',
+            lastName: 'GIBELLO',
+            email: 'virgile@exemple.com',
+            position: 'IT Master',
+            startDate: new Date('2021-08-01'),
+            status: 'in progress',
         },
         {
-            firstName: 'John',
-            lastName: 'DOE',
-            email: 'john@exemple.com',
-            position: 'Developer',
-            startDate: new Date('2022-01-15'),
+            firstName: 'Vincent',
+            lastName: 'VEGA',
+            email: 'vincent@exemple.com',
+            position: 'CEO',
+            startDate: new Date('2000-01-15'),
             status: 'completed',
         },
     ];
